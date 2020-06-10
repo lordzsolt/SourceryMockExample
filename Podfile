@@ -8,6 +8,7 @@ target 'SourceryExample' do
   target 'SourceryExampleTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Sourcery'
   end
 
 end
