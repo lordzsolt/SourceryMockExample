@@ -8,3 +8,10 @@
 
 import Foundation
 @testable import SourceryExample
+
+private protocol AutoMockable {}
+
+private typealias MFriendListInteractorProtocol = FriendListInteractorProtocol & AutoMockable
+private typealias MFriendListViewProtocol = FriendListViewProtocol & AutoMockable
+private typealias MFriendListWireframeProtocol = FriendListWireframeProtocol & AutoMockable
+
